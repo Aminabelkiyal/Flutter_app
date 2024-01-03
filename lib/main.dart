@@ -24,7 +24,13 @@ import 'package:food_delivery_app/utils/universal_variables.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp();
+  await Firebase.initializeApp(
+      options: FirebaseOptions(
+    apiKey: "AIzaSyAdzacamCXTCr1wrzzSGd9B5783Btaujsw",
+    appId: "1:586091254386:web:e6ed89aa6d5d6433efe8eb",
+    messagingSenderId: "586091254386",
+    projectId: "fooddelivery-7d3c6",
+  ));
 
   runApp(MyApp());
 }
